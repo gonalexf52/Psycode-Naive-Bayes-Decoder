@@ -35,7 +35,7 @@ $$
 Install required dependencies:
 pip install numpy pynwb scikit-learn scipy
 
-Download an individual NWB recording from the DANDI dataset and update these settings in naive-bayes-image-identity-decoder.py:
+Download an individual NWB recording from the DANDI dataset and update these settings in decoder.py:
 
 session_selection  = ‘pre’ or ‘post’
 
