@@ -36,6 +36,7 @@ Install required dependencies:
 
 pip install numpy pynwb scikit-learn scipy
 
+
 Download an individual NWB recording from the DANDI dataset and update these settings in decoder.py:
 
 session_selection  = ‘pre’ or ‘post’
@@ -43,6 +44,7 @@ session_selection  = ‘pre’ or ‘post’
 feature_selection = ‘neuron sum’ or ‘bin sum’ or ‘neuron bin combined’
 
 filepath = r’path to individual recording file’
+
 
 Run:
 
