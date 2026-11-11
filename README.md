@@ -3,7 +3,7 @@
 A Naive Bayes Decoder developed for OpenScope's Psycode Dataset—a project dedicated to investigating the effect of psilocybin administration on visual processing and behavior in the visual cortex of mice. This decoder leverages a Poisson distribution to model the probability of discrete spike counts over a time interval and attempts to decode natural-image identity from spike-train data.
 
 
-#### Pipeline
+### Pipeline
 
 -Loads neural spike-train data in Neurodata Without Borders (NWB) format.
 
@@ -30,21 +30,24 @@ p(x^\*)
 $$
 
 
-#### Set Up
+### Set Up
 
 Install required dependencies:
 pip install numpy pynwb scikit-learn scipy
 
 Download an individual NWB recording from the DANDI dataset and update these settings in naive-bayes-image-identity-decoder.py:
+
 session_selection  = ‘pre’ or ‘post’
+
 feature_selection = ‘neuron sum’ or ‘bin sum’ or ‘neuron bin combined’
+
 filepath = r’path to individual recording file’
 
 Run:
 python decoder.py
 
 
-#### Citations
+### Citations
 
 Amaya, A., Bawany, A., Buice, M., Carlson, M., De Filippo, R., Durand, S., Gillis, R., Grasso, C., Groblewski, P., Han, W., Johnson, T., Kenney, J., Kiselycznyk, C., Koch, C., Lecoq, J. A., Loeffler, H., Marks, L., Naidoo, R., Ott, T., Ouellette, B., Peene, R. C., Rembado, I., Schmitz, D., Suarez, L., Swapp, J., Weber, J., Wilkes, J., Williford, A., & Wyrick, D. (2026). Allen Institute OpenScope - Psycode (Version 0.260626.2154) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001417/0.260626.2154
 
